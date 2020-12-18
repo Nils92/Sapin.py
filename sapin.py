@@ -1,8 +1,12 @@
 etoile="*"
 nombre= input('Donne moi un chiffre bogosse: ')
 nombre=int(nombre) * 2 
-espace=" "
-
+espace="_"
+oui=nombre-2
+oui=int(oui) / 2
+print(oui)
+if nombre>13:
+    print("       /",etoile * (nombre-14),"\\")
 if nombre>11:
     print("      /",etoile * (nombre-12),"\\")
     print("     /",etoile * (nombre-10),"\\")
@@ -15,6 +19,4 @@ if nombre>5:
 if nombre>3:
     print(" /",etoile * (nombre-2),"\\")
 print("/",etoile * nombre,"\\")
-print(espace * (nombre-5),"#")
-
-
+print(" ",espace * oui,"#")

@@ -1,6 +1,6 @@
 etoile="*"
 nombre= input('Donne moi un chiffre bogosse: ')
-nombre=int(nombre) * 2 + 1
+nombre=int(nombre) * 2 
 if nombre>11:
     print("     /",etoile * (nombre-10),"I")
 if nombre>9:
